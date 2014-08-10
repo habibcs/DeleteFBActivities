@@ -65,6 +65,7 @@ namespace DeleteFBActivities
 
 			try
 			{
+                /* //Late 2012 code
 				Cookie c = new Cookie("presence", "EM338654546EuserFA2659625177A2EstateFDsb2F0Et2F_5b_5dElm2FnullEuct2F1338651218BEtrFA2loadA2EtwF240618245EatF1338654185986G338654546498EsndF0EnotF0CEchFDp_5f659625177F31CC", sPath, sDomain);
 				aCC.Add(c);
 				//p=3; presence=; act=; datr=; locale=en_US; lu=; c_user=; csm=2; s=; xs=;
@@ -79,6 +80,29 @@ namespace DeleteFBActivities
 				c = new Cookie("s", "Aa5Eeeg4qdtbj9mr", sPath, sDomain); aCC.Add(c);
 				c = new Cookie("xs", "3%3ABM89Z2TAic8JZg%3A2%3A1338651769", sPath, sDomain); aCC.Add(c);
 				c = new Cookie("wd", "1366x654", sPath, sDomain); aCC.Add(c); //CNT
+                */
+
+                //09 August 2014 - Facebook code (IP-Sitting in French/Swiss region, EU)
+                // datr=mpuHUltlM5M4tVf2i2GPTKu9;
+                /// lu=TgUdlrddFNTjJuQ2_Md2haUw;
+                /// locale=en_GB;
+                /// c_user=100006494321954;
+                /// fr=0IYyemryDVkPeh8IL.AWVx5Bt7tcKk-t91kfFF3tzTqkc.BT5nRM.0s.FPm.AWVdrvdp;
+                /// xs=107%3Ahlw-ZENUDzjacA%3A2%3A1407611980%3A8886;
+                /// csm=2;
+                /// s=Aa7ySACnrs6HVvqp
+                Cookie c = new Cookie("datr", "mpuHUltlM5M4tVf2i2GPTKu9", sPath,sDomain); aCC.Add(c);
+                c = new Cookie("presence", "EM407615979EuserFA21B06494321954A2EstateFDutF1407615979239Et2F_5b_5dEuct2F1407615209BElm2FnullEtrFA2loadA2EtwF919349399EatF1407615977341Esb2F0CEchFDp_5f1B06494321954F0CC", sPath, sDomain); aCC.Add(c);
+                c = new Cookie("act", "1407615808627%2F5", sPath, sDomain); aCC.Add(c);
+                c = new Cookie("lu", "TgUdlrddFNTjJuQ2_Md2haUw", sPath, sDomain); aCC.Add(c);
+                c = new Cookie("locale", "en_GB", sPath, sDomain); aCC.Add(c);
+                c = new Cookie("c_user", "100006494321954", sPath, sDomain); aCC.Add(c);
+                c = new Cookie("fr", "0IYyemryDVkPeh8IL.AWWMVBLbjdqEo_Hbm9r5MFeB6YY.BT5nRM.0s.FPm.AWXyW60a", sPath, sDomain); aCC.Add(c);
+                c = new Cookie("xs", "107%3Ahlw-ZENUDzjacA%3A2%3A1407611980%3A8886", sPath, sDomain); aCC.Add(c);
+                c = new Cookie("csm", "2", sPath, sDomain); aCC.Add(c);
+                c = new Cookie("p", "-2", sPath, sDomain); aCC.Add(c);
+                c = new Cookie("s", "Aa7ySACnrs6HVvqp", sPath, sDomain); aCC.Add(c);
+                c = new Cookie("wd", "1600x773", sPath, sDomain); aCC.Add(c); //sometimes or alternatively - (maybe resulotion)
 			}
 			catch (Exception ex)
 			{
